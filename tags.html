@@ -60,8 +60,12 @@
         <div class="col-lg-9">
     <section id="tags">
         <h1>Tags for pixelate-toast</h1>
-        <ul>                <li><a href="http://bmsleight.github.io/pixelate-toast-website/tag/pelican.html">pelican</a> (1)</li>
+        <ul>                <li><a href="http://bmsleight.github.io/pixelate-toast-website/tag/alumide.html">alumide</a> (1)</li>
+                <li><a href="http://bmsleight.github.io/pixelate-toast-website/tag/fail.html">fail</a> (1)</li>
+                <li><a href="http://bmsleight.github.io/pixelate-toast-website/tag/materialise.html">materialise</a> (1)</li>
+                <li><a href="http://bmsleight.github.io/pixelate-toast-website/tag/pelican.html">pelican</a> (1)</li>
                 <li><a href="http://bmsleight.github.io/pixelate-toast-website/tag/python.html">python</a> (1)</li>
+                <li><a href="http://bmsleight.github.io/pixelate-toast-website/tag/shapeways.html">shapeways</a> (1)</li>
         </ul>
     </section>
         </div>
@@ -70,19 +74,39 @@
     <section>
         <ul class="list-group list-group-flush">
                 <li class="list-group-item"><h4><i class="icon-home icon-large"></i>Social</h4></li>
-                    <li class="list-group-item"><a href="#"><i
-                            class="icon-You can add links in your config file-sign icon-large"></i>You can add links in your config file
+                    <li class="list-group-item"><a href="http://twitter.com/bmsleight"><i
+                            class="icon-twitter-sign icon-large"></i>twitter
                     </a></li>
-                    <li class="list-group-item"><a href="#"><i
-                            class="icon-Another social link-sign icon-large"></i>Another social link
+                    <li class="list-group-item"><a href="http://github.com/bmsleight"><i
+                            class="icon-github-sign icon-large"></i>github
                     </a></li>
 
 
 
             <li class="list-group-item"><a href="http://bmsleight.github.io/pixelate-toast-website/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>
                 <li class="list-group-item tag-4">
+                    <a href="http://bmsleight.github.io/pixelate-toast-website/tag/shapeways.html">
+                        shapeways
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://bmsleight.github.io/pixelate-toast-website/tag/fail.html">
+                        fail
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
                     <a href="http://bmsleight.github.io/pixelate-toast-website/tag/python.html">
                         python
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://bmsleight.github.io/pixelate-toast-website/tag/alumide.html">
+                        alumide
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://bmsleight.github.io/pixelate-toast-website/tag/materialise.html">
+                        materialise
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
@@ -91,6 +115,37 @@
                     </a>
                 </li>
         </ul>
+    </section>
+
+
+    <section>
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item"><h4><i class="icon-github icon-large"></i>GitHub Repos</h4></li>
+        <div id="gh_repos">
+            <p class="list-group-item">Status updating...</p>
+        </div>
+    </ul>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                if (!window.jXHR) {
+                    var jxhr = document.createElement('script');
+                    jxhr.type = 'text/javascript';
+                    jxhr.src = 'http://bmsleight.github.io/pixelate-toast-website/theme/js/jXHR.js';
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(jxhr, s);
+                }
+
+                github.showRepos({
+                    user: 'bmsleight',
+                    count: 5,
+                    skip_forks: true,
+                    target: '#gh_repos',
+                    sort_attribute: 'pushed_at',
+                    sort_descending: true
+                });
+            });
+        </script>
+        <script src="http://bmsleight.github.io/pixelate-toast-website/theme/js/github.js" type="text/javascript"></script>
     </section>
 </aside>        </div>
     </div>

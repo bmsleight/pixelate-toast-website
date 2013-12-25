@@ -1,26 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pixelate-toast</title><link href="http://bmsleight.github.io/pixelate-toast-website/" rel="alternate"></link><link href="http://bmsleight.github.io/pixelate-toast-website/feeds/all.atom.xml" rel="self"></link><id>http://bmsleight.github.io/pixelate-toast-website/</id><updated>2013-12-21T10:58:00+01:00</updated><entry><title>First Post</title><link href="http://bmsleight.github.io/pixelate-toast-website/first-post.html" rel="alternate"></link><updated>2013-12-21T10:58:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2013-12-21:first-post.html</id><summary type="html">&lt;p&gt;I have used wordpress for a while. It take too long to set-up and too much maintenance. I don't like mainteance :)&lt;/p&gt;
-&lt;p&gt;So having spotted a post on hacker news, about setting up static html using python. Using a project with a great project name - pelican. I thought I give it a go.&lt;/p&gt;
-&lt;p&gt;0 - pip install pelican
-0b - pip install ghp-import&lt;/p&gt;
-&lt;p&gt;1 - login to github
-2 - Cretae new repository e.g. (pixelate-toast-website.git)
-3 - git clone &lt;a class="reference external" href="https://github.com/bmsleight/pixelate-toast-website.git"&gt;https://github.com/bmsleight/pixelate-toast-website.git&lt;/a&gt;
-4 - cd pixelate-toast-website
-5 - pelican-quickstart&lt;/p&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/home/bms/pixelate-toast-website/content/blog/first-post.rst&lt;/tt&gt;, line 19)&lt;/p&gt;
-Unexpected indentation.&lt;/div&gt;
-&lt;blockquote&gt;
-&lt;ul class="simple"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pixelate-toast</title><link href="http://bmsleight.github.io/pixelate-toast-website/" rel="alternate"></link><link href="http://bmsleight.github.io/pixelate-toast-website/feeds/all.atom.xml" rel="self"></link><id>http://bmsleight.github.io/pixelate-toast-website/</id><updated>2013-12-25T21:00:00+01:00</updated><entry><title>First Attempt</title><link href="http://bmsleight.github.io/pixelate-toast-website/first-attempt.html" rel="alternate"></link><updated>2013-12-25T21:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2013-12-25:first-attempt.html</id><summary type="html">&lt;p&gt;After spending some time with making a &lt;a class="reference external" href="https://github.com/bmsleight/pixelate-toast/blob/master/cage/cage_im.py"&gt;3d model&lt;/a&gt;,&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="Model" src="http://bmsleight.github.io/pixelate-toast-website/images/first-attempt/model.jpg" /&gt;
+&lt;/div&gt;
+&lt;p&gt;I then tried to order in in alumide from &lt;a class="reference internal" href="#shapeways"&gt;Shapeways&lt;/a&gt; or &lt;a class="reference internal" href="#materialise"&gt;Materialise&lt;/a&gt;. Both companies found it hard to print.&lt;/p&gt;
+&lt;div class="section" id="materialise"&gt;
+&lt;h2&gt;&lt;a class="reference internal" href="#materialise"&gt;Materialise&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;This was in parts but to be fair I was printing at the absolute minimum, 1mm&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="materialise1.jpg" src="http://bmsleight.github.io/pixelate-toast-website/images/first-attempt/materialise1.jpg" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="shapeways"&gt;
+&lt;h2&gt;&lt;a class="reference internal" href="#shapeways"&gt;Shapeways&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;As I was printing on the edge of &lt;a class="reference external" href="https://www.shapeways.com/materials/alumide"&gt;alumide specification&lt;/a&gt; at 1.5mm wire thickness, there were some defects.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="Shapeways 1" src="http://bmsleight.github.io/pixelate-toast-website/images/first-attempt/shapeways1.jpg" /&gt;
+&lt;/div&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="Shapeways 1" src="http://bmsleight.github.io/pixelate-toast-website/images/first-attempt/shapeways2.jpg" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="burn-test"&gt;
+&lt;h2&gt;Burn Test&lt;/h2&gt;
+&lt;p&gt;I finally got a model of the master shape in my hands and set about making a simple cross shape to &amp;quot;burn&amp;quot; in to the toast. Set the pixel to a cross pattern.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="bread" src="http://bmsleight.github.io/pixelate-toast-website/images/first-attempt/bread.jpg" /&gt;
+&lt;/div&gt;
+&lt;p&gt;The adding to the toaster.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="bread" src="http://bmsleight.github.io/pixelate-toast-website/images/first-attempt/toasting.jpg" /&gt;
+&lt;/div&gt;
+&lt;p&gt;The bread held up longer then the model. Although the model was closer to the heat.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="melted-model.jpg" src="http://bmsleight.github.io/pixelate-toast-website/images/first-attempt/melted-model.jpg" /&gt;
+&lt;/div&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="still-bread.jpg" src="http://bmsleight.github.io/pixelate-toast-website/images/first-attempt/still-bread.jpg" /&gt;
+&lt;/div&gt;
+&lt;p&gt;One the other-side the bread was nicely toasted, but no pixels. &lt;strong&gt;Fail&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="shapeways"></category><category term="alumide"></category><category term="materialise"></category><category term="fail"></category></entry><entry><title>First Post</title><link href="http://bmsleight.github.io/pixelate-toast-website/first-post.html" rel="alternate"></link><updated>2013-12-21T10:58:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2013-12-21:first-post.html</id><summary type="html">&lt;p&gt;I have used wordpress for a while. It take too long to set-up and too much maintenance. I don't like mainteance :)&lt;/p&gt;
+&lt;p&gt;So having spotted a post on &lt;a class="reference external" href="https://news.ycombinator.com"&gt;hacker news&lt;/a&gt; , about setting up &lt;a class="reference external" href="http://razius.com/articles/ditching-wordpress-and-becoming-one-of-the-cool-kids/"&gt;static html using python&lt;/a&gt;. Using a project with a great project name.  &lt;a class="reference external" href="http://blog.getpelican.com/"&gt;pelican&lt;/a&gt;. I thought I give it a go.&lt;/p&gt;
+&lt;ol class="arabic simple" start="0"&gt;
+&lt;li&gt;Install pip and applications (TODO: &lt;a class="reference external" href="http://terriyu.info/blog/posts/2013/07/pelican-setup/"&gt;learn virtualenv&lt;/a&gt;&lt;ol class="arabic"&gt;
+&lt;li&gt;install pelican&lt;/li&gt;
+&lt;li&gt;pip install ghp-import&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;login to github&lt;/li&gt;
+&lt;li&gt;Cretae new repository e.g. (pixelate-toast-website.git)&lt;/li&gt;
+&lt;li&gt;git clone &lt;a class="reference external" href="https://github.com/bmsleight/pixelate-toast-website.git"&gt;https://github.com/bmsleight/pixelate-toast-website.git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cd pixelate-toast-website&lt;/li&gt;
+&lt;li&gt;pelican-quickstart&lt;ol class="arabic"&gt;
 &lt;li&gt;website address for now .... &lt;a class="reference external" href="http://bmsleight.github.io/pixelate-toast-website"&gt;http://bmsleight.github.io/pixelate-toast-website&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;git add ./*&lt;/li&gt;
+&lt;li&gt;git commit. m &amp;quot;Initial pelican-quickstart&amp;quot;&lt;/li&gt;
+&lt;li&gt;git push&lt;/li&gt;
+&lt;li&gt;make github&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Then as necessary&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;make github&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;/home/bms/pixelate-toast-website/content/blog/first-post.rst&lt;/tt&gt;, line 20)&lt;/p&gt;
-Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
-&lt;p&gt;6 - git add ./*
-7 - git commit -m &amp;quot;Initial pelican-quickstart&amp;quot;
-8 - git push
-9 - make github&lt;/p&gt;
 </summary><category term="python"></category><category term="pelican"></category></entry></feed>
