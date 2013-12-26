@@ -42,7 +42,7 @@ Results are a little better, but still the resolution is very low.
     :alt: new pattern
     :align: center
 
-.. figure:: {filename}/second/images-attempt/IMG_20131226_210220.jpg
+.. figure:: {filename}/images/second-attempt/IMG_20131226_210220.jpg
     :alt: new pattern
     :align: center
 
