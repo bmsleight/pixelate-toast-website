@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pixelate-toast</title><link href="http://bmsleight.github.io/pixelate-toast-website/" rel="alternate"></link><link href="http://bmsleight.github.io/pixelate-toast-website/feeds/all.atom.xml" rel="self"></link><id>http://bmsleight.github.io/pixelate-toast-website/</id><updated>2013-12-26T22:00:00+01:00</updated><entry><title>Chopping Board Hack</title><link href="http://bmsleight.github.io/pixelate-toast-website/chopping-board-hack.html" rel="alternate"></link><updated>2013-12-26T22:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2013-12-26:chopping-board-hack.html</id><summary type="html">&lt;p&gt;This is a simple hack, using a chopping board. But young Charlie likes to call it &amp;quot;An initial toast machine&amp;quot;, because we used to make toast with our initials on.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pixelate-toast</title><link href="http://bmsleight.github.io/pixelate-toast-website/" rel="alternate"></link><link href="http://bmsleight.github.io/pixelate-toast-website/feeds/all.atom.xml" rel="self"></link><id>http://bmsleight.github.io/pixelate-toast-website/</id><updated>2013-12-27T23:00:00+01:00</updated><entry><title>We have a Logo</title><link href="http://bmsleight.github.io/pixelate-toast-website/we-have-a-logo.html" rel="alternate"></link><updated>2013-12-27T23:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2013-12-27:we-have-a-logo.html</id><summary type="html">&lt;p&gt;So at last we have a reasonable print, something that works.&lt;/p&gt;
+&lt;p&gt;I upgraded the &amp;quot;machine&amp;quot; with closer holes and large holes. The larger holes were not much good. (Although I need to test further).&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="new machine" src="http://bmsleight.github.io/pixelate-toast-website/images/the-logo/IMG_20131227_223412.jpg" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="logo"&gt;
+&lt;h2&gt;Logo&lt;/h2&gt;
+&lt;p&gt;However the smaller holes with the closer pattern worked quite well. Here is the new logo, P T - Pixelate Toast, in toast form.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="new machine" src="http://bmsleight.github.io/pixelate-toast-website/images/the-logo/logo.jpg" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="toast"></category><category term="pixels"></category><category term="logo"></category></entry><entry><title>Chopping Board Hack</title><link href="http://bmsleight.github.io/pixelate-toast-website/chopping-board-hack.html" rel="alternate"></link><updated>2013-12-26T22:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2013-12-26:chopping-board-hack.html</id><summary type="html">&lt;p&gt;This is a simple hack, using a chopping board. But young Charlie likes to call it &amp;quot;An initial toast machine&amp;quot;, because we used to make toast with our initials on.&lt;/p&gt;
 &lt;div class="section" id="machine-making"&gt;
 &lt;h2&gt;Machine Making&lt;/h2&gt;
 &lt;p&gt;Using two chopping boards, some bolts and some nuts. I marked out a 10x10cm grid and drilled holes 4mm diameter. I wanted to use the plunger on a syringe but the diameter was 10mm. So for the plunger I using a bolt. Any way picture is worth a thousand words.&lt;/p&gt;
