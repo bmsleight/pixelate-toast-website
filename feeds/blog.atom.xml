@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pixelate-toast</title><link href="http://bmsleight.github.io/pixelate-toast-website/" rel="alternate"></link><link href="http://bmsleight.github.io/pixelate-toast-website/feeds/blog.atom.xml" rel="self"></link><id>http://bmsleight.github.io/pixelate-toast-website/</id><updated>2013-12-27T23:00:00+01:00</updated><entry><title>We have a Logo</title><link href="http://bmsleight.github.io/pixelate-toast-website/we-have-a-logo.html" rel="alternate"></link><updated>2013-12-27T23:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2013-12-27:we-have-a-logo.html</id><summary type="html">&lt;p&gt;So at last we have a reasonable print, something that works.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pixelate-toast</title><link href="http://bmsleight.github.io/pixelate-toast-website/" rel="alternate"></link><link href="http://bmsleight.github.io/pixelate-toast-website/feeds/blog.atom.xml" rel="self"></link><id>http://bmsleight.github.io/pixelate-toast-website/</id><updated>2014-01-02T21:00:00+01:00</updated><entry><title>Note on OpenWRT on TP-LINK TL-WR703N</title><link href="http://bmsleight.github.io/pixelate-toast-website/note-on-openwrt-on-tp-link-tl-wr703n.html" rel="alternate"></link><updated>2014-01-02T21:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2014-01-02:note-on-openwrt-on-tp-link-tl-wr703n.html</id><summary type="html">&lt;p&gt;The wonderful router, can run &lt;a class="reference external" href="http://openwrt.org"&gt;OpenWRT&lt;/a&gt; built in Wifi (802.11 b/g/n) and an USB 2.0 port &lt;a class="reference external" href="http://wiki.openwrt.org/toh/tp-link/tl-wr703n"&gt;TL-WRT703N&lt;/a&gt;. So I can use it to host the &lt;a class="reference external" href="https://github.com/bmsleight/pixelate-toast/tree/master/javascript"&gt;JavaScript pages&lt;/a&gt; as even after a full &lt;a class="reference external" href="http://openwrt.org"&gt;OpenWRT&lt;/a&gt; it still has around a 1Mb memory, enough to do some hosting.&lt;/p&gt;
+&lt;div class="section" id="notes-on-installation"&gt;
+&lt;h2&gt;Notes On Installation&lt;/h2&gt;
+&lt;p&gt;This is some notes, used to install and get relayd up and running. I may use it as a plan open wireless access point in the future.&lt;/p&gt;
+&lt;p&gt;Download:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ wget http://downloads.openwrt.org/attitude_adjustment/12.09/ar71xx/generic/openwrt-ar71xx-generic-tl-wr703n-v1-squashfs-factory.bin
+&lt;/pre&gt;
+&lt;p&gt;Set laptop wired IP to 192.168.1.4&lt;/p&gt;
+&lt;p&gt;Follow the instructions at &lt;a class="reference external" href="http://www.madox.net/blog/projects/tp-link-tl-wr703n/"&gt;http://www.madox.net/blog/projects/tp-link-tl-wr703n/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Still in the browser, login to router (root/blank). Set password.&lt;/p&gt;
+&lt;p&gt;Now I am also running openWRT on my main home wireless access point. Using 192.168.1.1, so once the router is flashed I need to change the routers fixed LAN address to something else - if I want to connect to my main wireless access point.&lt;/p&gt;
+&lt;p&gt;Still in the browser, at &lt;a class="reference external" href="http://192.168.1.1/"&gt;http://192.168.1.1/&lt;/a&gt; -&amp;gt; Network
+Edit LAN, set IPv4 address -&amp;gt; 192.168.2.1 -&amp;gt; Save and apply&lt;/p&gt;
+&lt;p&gt;You are now unable to connect, change laptop wired IP Address to 192.168.2.4, Netmask as 255.255.255.0, Gateway as 192.168.2.1, DNS Servers as 192.168.2.1&lt;/p&gt;
+&lt;p&gt;Browser go to &lt;a class="reference external" href="http://192.168.2.1/"&gt;http://192.168.2.1/&lt;/a&gt; redirect to &lt;a class="reference external" href="http://192.168.2.1/cgi-bin/luci"&gt;http://192.168.2.1/cgi-bin/luci&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Network -&amp;gt; Wifi -&amp;gt; Scan&lt;/p&gt;
+&lt;p&gt;Then (hopefully) Join Network for the network of your choice. Enter key and leave Create / Assign firewall-zone as WAN -&amp;gt; Save &amp;amp; Apply -&amp;gt; Interfaces&lt;/p&gt;
+&lt;p&gt;And we should see a nice IPv4 for the WAN side as well, time for some command line on the router, to confirm connection:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ ssh root&amp;#64;192.168.2.1
+root&amp;#64;OpenWrt:~# ping google.com
+root&amp;#64;OpenWrt:~# opkg update
+root&amp;#64;OpenWrt:~# opkg install relayd
+root&amp;#64;OpenWrt:~# opkg install luci-proto-relay
+root&amp;#64;OpenWrt:~# /etc/init.d/relayd enable
+&lt;/pre&gt;
+&lt;p&gt;Back/Still in the browser, Network -&amp;gt; Create Interface, Named: stabridge Protocol: Relay Bridge, Then tick WAN and LAN, Local IPv4 address: 192.168.2.1, Save and Apply&lt;/p&gt;
+&lt;p&gt;Network -&amp;gt; Firewall -&amp;gt; General Settings
+Zone Forwarding, Lan=&amp;gt;Wan - Change forwarding to Accept&lt;/p&gt;
+&lt;p&gt;Back to laptop and try:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+$ ping google
+&lt;/pre&gt;
+&lt;/div&gt;
+</summary><category term="openwrt"></category><category term="wr703n"></category></entry><entry><title>We have a Logo</title><link href="http://bmsleight.github.io/pixelate-toast-website/we-have-a-logo.html" rel="alternate"></link><updated>2013-12-27T23:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2013-12-27:we-have-a-logo.html</id><summary type="html">&lt;p&gt;So at last we have a reasonable print, something that works.&lt;/p&gt;
 &lt;p&gt;I upgraded the &amp;quot;machine&amp;quot; with closer holes and large holes. The larger holes were not much good. (Although I need to test further).&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
 &lt;img alt="new machine" src="http://bmsleight.github.io/pixelate-toast-website/images/the-logo/IMG_20131227_223412.jpg" /&gt;
