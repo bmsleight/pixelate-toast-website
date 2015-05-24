@@ -1,63 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pixelate-toast</title><link href="http://bmsleight.github.io/pixelate-toast-website/" rel="alternate"></link><link href="http://bmsleight.github.io/pixelate-toast-website/feeds/all.atom.xml" rel="self"></link><id>http://bmsleight.github.io/pixelate-toast-website/</id><updated>2014-03-09T23:00:00+01:00</updated><entry><title>Frame One</title><link href="http://bmsleight.github.io/pixelate-toast-website/frame-one.html" rel="alternate"></link><updated>2014-03-09T23:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2014-03-09:frame-one.html</id><summary type="html">&lt;p&gt;Following on from my &lt;a class="reference external" href="http://bmsleight.github.io/pixelate-toast-website/printrbot.html"&gt;first prints with my Printrbot&lt;/a&gt; I spend some more time in &lt;a class="reference external" href="http://www.openscad.org/"&gt;Openscad&lt;/a&gt; and making a &lt;a class="reference external" href="https://github.com/bmsleight/pixelate-toast/tree/master/machine/frame"&gt;few parts.&lt;/a&gt;&lt;/p&gt;
-&lt;div class="figure align-center"&gt;
-&lt;img alt="frame" src="http://bmsleight.github.io/pixelate-toast-website/images/frame-one/openscad-mockup.png" /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pixelate-toast</title><link href="http://bmsleight.github.io/pixelate-toast-website/" rel="alternate"></link><link href="http://bmsleight.github.io/pixelate-toast-website/feeds/all.atom.xml" rel="self"></link><id>http://bmsleight.github.io/pixelate-toast-website/</id><updated>2015-05-24T21:00:00+02:00</updated><entry><title>Been a While</title><link href="http://bmsleight.github.io/pixelate-toast-website/been-a-while.html" rel="alternate"></link><updated>2015-05-24T21:00:00+02:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io,2015-05-24:pixelate-toast-website/been-a-while.html</id><summary type="html">&lt;div class="section" id="notes-on-installation"&gt;
+&lt;h2&gt;Notes On Installation&lt;/h2&gt;
+&lt;p&gt;Been a while, but I am goign to have another bash at this project.&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;I wanted to put the frame together before I think about some of the pulley etc. For two reasons, one to get me used to 3d printed parts and two to see if I have to change tack early before doing some of the hard tasks.&lt;/p&gt;
-&lt;div class="figure align-center"&gt;
-&lt;img alt="connector" src="http://bmsleight.github.io/pixelate-toast-website/images/frame-one/connector.png" /&gt;
-&lt;/div&gt;
-&lt;p&gt;With the use of magical threaded rod give us (too large in some people opinion) frame.&lt;/p&gt;
-&lt;div class="figure align-center"&gt;
-&lt;img alt="frame" src="http://bmsleight.github.io/pixelate-toast-website/images/frame-one/frame.jpg" style="width: 100%;" /&gt;
-&lt;/div&gt;
-</summary><category term="openscad"></category><category term="printrbot"></category></entry><entry><title>Printrbot</title><link href="http://bmsleight.github.io/pixelate-toast-website/printrbot.html" rel="alternate"></link><updated>2014-02-25T23:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2014-02-25:printrbot.html</id><summary type="html">&lt;p&gt;I now have a wonderful 3d-printer (again),  a &lt;a class="reference external" href="http://printrbot.com/"&gt;Printrbot&lt;/a&gt; with a little help from &lt;a class="reference external" href="http://www.replicat3d.co.uk/"&gt;replicat3d&lt;/a&gt;&lt;/p&gt;
-&lt;div class="figure align-center"&gt;
-&lt;img alt="part" src="http://bmsleight.github.io/pixelate-toast-website/images/printrbot/part_clean.jpg" /&gt;
-&lt;/div&gt;
-&lt;p&gt;It printed in ~50mins. It actually finished the print looking like below, all I need to do is clear up the support material.&lt;/p&gt;
-&lt;div class="figure align-center"&gt;
-&lt;img alt="part" src="http://bmsleight.github.io/pixelate-toast-website/images/printrbot/part.jpg" /&gt;
-&lt;/div&gt;
-&lt;p&gt;I took about the same time to design it in &lt;a class="reference external" href="http://www.openscad.org/"&gt;Openscad&lt;/a&gt;&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-$fn=60;
-radius_tr = 6/2;
-connector_offset = 20;
-//
-co = connector_offset;
-// m6 Width Across Corners 11.05
-module connector()
-{
-    d = (radius_tr*2);
-    unit = (d*2); //12
-    co_h = unit*3;
-    cu_h = unit*3;
-    difference() {
-        translate([-unit/2,-unit/2,-unit/2]) cube([co_h,co_h,co_h], center=true);
-        translate([0,0,0]) cube([co_h,co_h,co_h], center=true);
-        translate([unit/2,unit/2,-co_h]) cylinder(h=co_h, r=radius_tr, center=center);
-        rotate([0,270,0]) translate([unit/2,unit/2,0]) cylinder(h=co_h, r=radius_tr, center=center);
-        rotate([90,0,0]) translate([unit/2,unit/2,0]) cylinder(h=co_h, r=radius_tr, center=center);
-    }
-}
-connector();
-&lt;/pre&gt;
-&lt;p&gt;Which gives this in &lt;a class="reference external" href="http://www.openscad.org/"&gt;Openscad&lt;/a&gt;&lt;/p&gt;
-&lt;div class="figure align-center"&gt;
-&lt;img alt="part" src="http://bmsleight.github.io/pixelate-toast-website/images/printrbot/part.png" /&gt;
-&lt;/div&gt;
-</summary><category term="openscad"></category><category term="printrbot"></category></entry><entry><title>OpenSCAD Machine</title><link href="http://bmsleight.github.io/pixelate-toast-website/openscad-machine.html" rel="alternate"></link><updated>2014-02-08T22:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2014-02-08:openscad-machine.html</id><summary type="html">&lt;p&gt;So I took the &lt;a class="reference external" href="http://bmsleight.github.io/pixelate-toast-website/sketches-of-a-machine.html"&gt;fine sketches&lt;/a&gt; and made a shapes in &lt;a class="reference external" href="http://www.openscad.org/"&gt;Openscad&lt;/a&gt;. I am basing the models on the machines I have (or hopefully going to have) at my disposal.  Not shown on the models is bolts and springs.&lt;/p&gt;
-&lt;div class="figure align-center"&gt;
-&lt;img alt="sketches" src="http://bmsleight.github.io/pixelate-toast-website/images/openscad-machine/backing-board.png" /&gt;
-&lt;/div&gt;
-&lt;p&gt;To cut of the back plate (shown in brown), I hope to use my &lt;a class="reference external" href="http://shapeoko.com/"&gt;Shapeoko 2&lt;/a&gt; for the plastic parts I hope to use a &lt;a class="reference external" href="http://printrbot.com/"&gt;Printrbot&lt;/a&gt; which I may have in the future.&lt;/p&gt;
-</summary><category term="openscad"></category></entry><entry><title>Sketches of a Machine</title><link href="http://bmsleight.github.io/pixelate-toast-website/sketches-of-a-machine.html" rel="alternate"></link><updated>2014-01-17T21:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2014-01-17:sketches-of-a-machine.html</id><summary type="html">&lt;p&gt;I gone over quite a few ideas in my head how to automate getting the pattern on the raw bread. For my latest idea I did some sketches of how a machines could work.&lt;/p&gt;
-&lt;div class="figure align-center"&gt;
-&lt;img alt="sketches" src="http://bmsleight.github.io/pixelate-toast-website/images/sketches/sketch1.jpg" /&gt;
-&lt;/div&gt;
-&lt;p&gt;Time to crack open SolidPython and start &lt;a class="reference external" href="https://github.com/bmsleight/pixelate-toast/blob/master/machine/machine.py"&gt;coding&lt;/a&gt;&lt;/p&gt;
-</summary><category term="sketches"></category></entry><entry><title>Note on OpenWRT on TP-LINK TL-WR703N</title><link href="http://bmsleight.github.io/pixelate-toast-website/note-on-openwrt-on-tp-link-tl-wr703n.html" rel="alternate"></link><updated>2014-01-02T21:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2014-01-02:note-on-openwrt-on-tp-link-tl-wr703n.html</id><summary type="html">&lt;p&gt;The wonderful router, can run &lt;a class="reference external" href="http://openwrt.org"&gt;OpenWRT&lt;/a&gt; built in Wifi (802.11 b/g/n) and an USB 2.0 port &lt;a class="reference external" href="http://wiki.openwrt.org/toh/tp-link/tl-wr703n"&gt;TL-WRT703N&lt;/a&gt;. So I can use it to host the &lt;a class="reference external" href="https://github.com/bmsleight/pixelate-toast/tree/master/javascript"&gt;JavaScript pages&lt;/a&gt; as even after a full &lt;a class="reference external" href="http://openwrt.org"&gt;OpenWRT&lt;/a&gt; it still has around a 1Mb memory, enough to do some hosting.&lt;/p&gt;
+</summary><category term="while"></category></entry><entry><title>Note on OpenWRT on TP-LINK TL-WR703N</title><link href="http://bmsleight.github.io/pixelate-toast-website/note-on-openwrt-on-tp-link-tl-wr703n.html" rel="alternate"></link><updated>2014-01-02T21:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io,2014-01-02:pixelate-toast-website/note-on-openwrt-on-tp-link-tl-wr703n.html</id><summary type="html">&lt;p&gt;The wonderful router, can run &lt;a class="reference external" href="http://openwrt.org"&gt;OpenWRT&lt;/a&gt; built in Wifi (802.11 b/g/n) and an USB 2.0 port &lt;a class="reference external" href="http://wiki.openwrt.org/toh/tp-link/tl-wr703n"&gt;TL-WRT703N&lt;/a&gt;. So I can use it to host the &lt;a class="reference external" href="https://github.com/bmsleight/pixelate-toast/tree/master/javascript"&gt;JavaScript pages&lt;/a&gt; as even after a full &lt;a class="reference external" href="http://openwrt.org"&gt;OpenWRT&lt;/a&gt; it still has around a 1Mb memory, enough to do some hosting.&lt;/p&gt;
 &lt;div class="section" id="notes-on-installation"&gt;
 &lt;h2&gt;Notes On Installation&lt;/h2&gt;
 &lt;p&gt;This is some notes, used to install and get relayd up and running. I may use it as a plan open wireless access point in the future.&lt;/p&gt;
@@ -87,15 +33,12 @@ root&amp;#64;OpenWrt:~# /etc/init.d/relayd enable
 &lt;p&gt;Back/Still in the browser, Network -&amp;gt; Create Interface, Named: stabridge Protocol: Relay Bridge, Then tick WAN and LAN, Local IPv4 address: 192.168.2.1, Save and Apply&lt;/p&gt;
 &lt;p&gt;Network -&amp;gt; Firewall -&amp;gt; General Settings
 Zone Forwarding, Lan=&amp;gt;Wan - Change forwarding to Accept&lt;/p&gt;
-&lt;p&gt;Also to enable connection from another machine on the lan:-&lt;/p&gt;
-&lt;p&gt;Network -&amp;gt; Firewall -&amp;gt; General Settings
-Wan: WWAN=&amp;gt; - - Change Input to Accept and Change forwarding to Accept (accept all)&lt;/p&gt;
 &lt;p&gt;Back to laptop and try:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 $ ping google
 &lt;/pre&gt;
 &lt;/div&gt;
-</summary><category term="openwrt"></category><category term="wr703n"></category></entry><entry><title>We have a Logo</title><link href="http://bmsleight.github.io/pixelate-toast-website/we-have-a-logo.html" rel="alternate"></link><updated>2013-12-27T23:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2013-12-27:we-have-a-logo.html</id><summary type="html">&lt;p&gt;So at last we have a reasonable print, something that works.&lt;/p&gt;
+</summary><category term="openwrt"></category><category term="wr703n"></category></entry><entry><title>We have a Logo</title><link href="http://bmsleight.github.io/pixelate-toast-website/we-have-a-logo.html" rel="alternate"></link><updated>2013-12-27T23:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io,2013-12-27:pixelate-toast-website/we-have-a-logo.html</id><summary type="html">&lt;p&gt;So at last we have a reasonable print, something that works.&lt;/p&gt;
 &lt;p&gt;I upgraded the &amp;quot;machine&amp;quot; with closer holes and large holes. The larger holes were not much good. (Although I need to test further).&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
 &lt;img alt="new machine" src="http://bmsleight.github.io/pixelate-toast-website/images/the-logo/IMG_20131227_223412.jpg" /&gt;
@@ -107,7 +50,7 @@ $ ping google
 &lt;img alt="new machine" src="http://bmsleight.github.io/pixelate-toast-website/images/the-logo/logo.jpg" /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="toast"></category><category term="pixels"></category><category term="logo"></category></entry><entry><title>Chopping Board Hack</title><link href="http://bmsleight.github.io/pixelate-toast-website/chopping-board-hack.html" rel="alternate"></link><updated>2013-12-26T22:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2013-12-26:chopping-board-hack.html</id><summary type="html">&lt;p&gt;This is a simple hack, using a chopping board. But young Charlie likes to call it &amp;quot;An initial toast machine&amp;quot;, because we used to make toast with our initials on.&lt;/p&gt;
+</summary><category term="toast"></category><category term="pixels"></category><category term="logo"></category></entry><entry><title>Chopping Board Hack</title><link href="http://bmsleight.github.io/pixelate-toast-website/chopping-board-hack.html" rel="alternate"></link><updated>2013-12-26T22:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io,2013-12-26:pixelate-toast-website/chopping-board-hack.html</id><summary type="html">&lt;p&gt;This is a simple hack, using a chopping board. But young Charlie likes to call it &amp;quot;An initial toast machine&amp;quot;, because we used to make toast with our initials on.&lt;/p&gt;
 &lt;div class="section" id="machine-making"&gt;
 &lt;h2&gt;Machine Making&lt;/h2&gt;
 &lt;p&gt;Using two chopping boards, some bolts and some nuts. I marked out a 10x10cm grid and drilled holes 4mm diameter. I wanted to use the plunger on a syringe but the diameter was 10mm. So for the plunger I using a bolt. Any way picture is worth a thousand words.&lt;/p&gt;
@@ -160,7 +103,7 @@ $ ping google
 &lt;img alt="image" src="http://bmsleight.github.io/pixelate-toast-website/images/chopping-board-hack/IMG_20131227_151827.jpg" /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="toast"></category><category term="pixels"></category><category term="Charlie"></category><category term="trial"></category><category term="chopping-board"></category></entry><entry><title>Pixels at Last</title><link href="http://bmsleight.github.io/pixelate-toast-website/pixels-at-last.html" rel="alternate"></link><updated>2013-12-26T22:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2013-12-26:pixels-at-last.html</id><summary type="html">&lt;p&gt;At last we have something that looks like a pixels burnt in to toast.&lt;/p&gt;
+</summary><category term="toast"></category><category term="pixels"></category><category term="Charlie"></category><category term="trial"></category><category term="chopping-board"></category></entry><entry><title>Pixels at Last</title><link href="http://bmsleight.github.io/pixelate-toast-website/pixels-at-last.html" rel="alternate"></link><updated>2013-12-26T22:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io,2013-12-26:pixelate-toast-website/pixels-at-last.html</id><summary type="html">&lt;p&gt;At last we have something that looks like a pixels burnt in to toast.&lt;/p&gt;
 &lt;div class="section" id="method"&gt;
 &lt;h2&gt;Method&lt;/h2&gt;
 &lt;p&gt;Stamp the pixels in a matrix pattern, using the end of a pencil (rubber) in to the bread.&lt;/p&gt;
@@ -176,7 +119,7 @@ $ ping google
 &lt;/div&gt;
 &lt;p&gt;I think this method could work. Stamp out a pattern, then toast. I am thinking, something like a &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Teleprinter#Teleprinters_in_computing"&gt;teleprinter tty ?&lt;/a&gt;  or toast-Teletype ? Where each line of dots across a row is stamped out.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="toast"></category><category term="pixels"></category><category term="trial"></category><category term="stamp"></category><category term="tty"></category></entry><entry><title>Second Attempt - A P? and a Square</title><link href="http://bmsleight.github.io/pixelate-toast-website/second-attempt-a-p-and-a-square.html" rel="alternate"></link><updated>2013-12-26T22:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2013-12-26:second-attempt-a-p-and-a-square.html</id><summary type="html">&lt;p&gt;Following on from the first attempt. I decided to go back to basics and see if any heat shielding could create a pattern on toast.&lt;/p&gt;
+</summary><category term="toast"></category><category term="pixels"></category><category term="trial"></category><category term="stamp"></category><category term="tty"></category></entry><entry><title>Second Attempt - A P? and a Square</title><link href="http://bmsleight.github.io/pixelate-toast-website/second-attempt-a-p-and-a-square.html" rel="alternate"></link><updated>2013-12-26T22:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io,2013-12-26:pixelate-toast-website/second-attempt-a-p-and-a-square.html</id><summary type="html">&lt;p&gt;Following on from the first attempt. I decided to go back to basics and see if any heat shielding could create a pattern on toast.&lt;/p&gt;
 &lt;p&gt;The first pattern, look really good.&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
 &lt;img alt="pattern" src="http://bmsleight.github.io/pixelate-toast-website/images/second-attempt/IMG_20131225_223321.jpg" /&gt;
@@ -214,7 +157,7 @@ $ ping google
 $ ls content/images/second-attempt/* -l | cut  -d' ' -f9
 $ mogrify *.jpg -resize 600x *.jpg
 &lt;/pre&gt;
-</summary><category term="toast"></category><category term="foil"></category></entry><entry><title>First Attempt</title><link href="http://bmsleight.github.io/pixelate-toast-website/first-attempt.html" rel="alternate"></link><updated>2013-12-25T21:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2013-12-25:first-attempt.html</id><summary type="html">&lt;p&gt;After spending some time with making a &lt;a class="reference external" href="https://github.com/bmsleight/pixelate-toast/blob/master/cage/cage_im.py"&gt;3d model&lt;/a&gt;,&lt;/p&gt;
+</summary><category term="toast"></category><category term="foil"></category></entry><entry><title>First Attempt</title><link href="http://bmsleight.github.io/pixelate-toast-website/first-attempt.html" rel="alternate"></link><updated>2013-12-25T21:00:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io,2013-12-25:pixelate-toast-website/first-attempt.html</id><summary type="html">&lt;p&gt;After spending some time with making a &lt;a class="reference external" href="https://github.com/bmsleight/pixelate-toast/blob/master/cage/cage_im.py"&gt;3d model&lt;/a&gt;,&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
 &lt;img alt="Model" src="http://bmsleight.github.io/pixelate-toast-website/images/first-attempt/model.jpg" /&gt;
 &lt;/div&gt;
@@ -255,7 +198,7 @@ $ mogrify *.jpg -resize 600x *.jpg
 &lt;/div&gt;
 &lt;p&gt;One the other-side the bread was nicely toasted, but no pixels. &lt;strong&gt;Fail&lt;/strong&gt;&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="shapeways"></category><category term="alumide"></category><category term="materialise"></category><category term="fail"></category></entry><entry><title>First Post</title><link href="http://bmsleight.github.io/pixelate-toast-website/first-post.html" rel="alternate"></link><updated>2013-12-21T10:58:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io/pixelate-toast-website,2013-12-21:first-post.html</id><summary type="html">&lt;p&gt;I have used wordpress for a while. It take too long to set-up and too much maintenance. I don't like mainteance :)&lt;/p&gt;
+</summary><category term="shapeways"></category><category term="alumide"></category><category term="materialise"></category><category term="fail"></category></entry><entry><title>First Post</title><link href="http://bmsleight.github.io/pixelate-toast-website/first-post.html" rel="alternate"></link><updated>2013-12-21T10:58:00+01:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io,2013-12-21:pixelate-toast-website/first-post.html</id><summary type="html">&lt;p&gt;I have used wordpress for a while. It take too long to set-up and too much maintenance. I don't like mainteance :)&lt;/p&gt;
 &lt;p&gt;So having spotted a post on &lt;a class="reference external" href="https://news.ycombinator.com"&gt;hacker news&lt;/a&gt; , about setting up &lt;a class="reference external" href="http://razius.com/articles/ditching-wordpress-and-becoming-one-of-the-cool-kids/"&gt;static html using python&lt;/a&gt;. Using a project with a great project name.  &lt;a class="reference external" href="http://blog.getpelican.com/"&gt;pelican&lt;/a&gt;. I thought I give it a go.&lt;/p&gt;
 &lt;ol class="arabic simple" start="0"&gt;
 &lt;li&gt;Install pip and applications (TODO: &lt;a class="reference external" href="http://terriyu.info/blog/posts/2013/07/pelican-setup/"&gt;learn virtualenv&lt;/a&gt;&lt;ol class="arabic"&gt;
