@@ -3,7 +3,7 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    <title>Pixelate-toast</title>
+    <title>Gear Size</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -12,8 +12,9 @@
     <!-- Open Graph tags -->
 
             <meta property="og:type" content="article"/>
-            <meta property="og:title" content="Pixelate-toast"/>
-            <meta property="og:url" content="http://bmsleight.github.io/pixelate-toast-website/"/>
+            <meta property="og:title" content="Gear Size"/>
+            <meta property="og:url" content="http://bmsleight.github.io/pixelate-toast-website/gear-size.html"/>
+            <meta property="og:description" content="Selecting Gear Size Workign out the clearances for the gear size it not easy. My orignal sketch in Tinkercad looked like this:- But sketching out the motor size and the gear size, identifies a problem. pattern The clearance is ((gear_size)-(Motor_size))/2 or just two thicknesses of 3mm. Not enough ..."/>
 
     <!-- Bootstrap -->
         <link rel="stylesheet" href="http://bmsleight.github.io/pixelate-toast-website/theme/css/bootstrap.min.css" type="text/css"/>
@@ -42,7 +43,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                         <li><a href="http://bmsleight.github.io/pixelate-toast-website/">Pixelate-toast</a></li>
-                        <li >
+                        <li class="active">
                             <a href="http://bmsleight.github.io/pixelate-toast-website/category/blog.html">blog</a>
                         </li>
             </ul>
@@ -57,23 +58,68 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-9">
-    <section id="content" class="body">
-        <h1 class="entry-title">Pixelate-toast</h1>
-        <div class="entry-content">
-            <p>The idea is to mix a few ingredients</p>
-<ul class="simple">
-<li>Bread</li>
-<li>GNU/Linux</li>
-<li>Arduino</li>
-<li>Wifi to serve a website</li>
-</ul>
-<p>Bake in to toast, displaying pixels.</p>
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://bmsleight.github.io/pixelate-toast-website/gear-size.html"
+                       rel="bookmark"
+                       title="Permalink to Gear Size">
+                        Gear Size
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+
+
+
+
+	<span class="label label-default">Tags</span>
+		<a href="http://bmsleight.github.io/pixelate-toast-website/tag/while.html">while</a>
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <div class="section" id="selecting-gear-size">
+<h2>Selecting Gear Size</h2>
+<p>Workign out the clearances for the gear size it not easy.</p>
+<p>My orignal sketch in <a class="reference external" href="https://www.tinkercad.com">Tinkercad</a> looked like this:-</p>
 <div class="figure align-center">
-<img alt="new machine" src="http://bmsleight.github.io/pixelate-toast-website/images/the-logo/logo.jpg" />
+<img alt="pattern" src="http://bmsleight.github.io/pixelate-toast-website/images/been-a-while/tinkercad.jpg" />
+</div>
+<p>But sketching out the motor size and the gear size, identifies a problem.</p>
+<div class="figure align-center">
+<object data="http://bmsleight.github.io/pixelate-toast-website/images/gear-size/gear.svg" type="image/svg+xml">
+pattern</object>
+</div>
+<div class="figure align-center">
+<img alt="pattern" src="http://bmsleight.github.io/pixelate-toast-website/images/gear-size/updated-tinkercad.png" />
+</div>
+<p>The clearance is ((gear_size)-(Motor_size))/2 or just two thicknesses of 3mm. Not enough to get the rails and support in the model above.  Time to fire up the gear generator on inkscape again. I am looking for clearance of 12mm, so a total gear height of around, 44+12+12 = 68 with a circular pitch of 10mm (to fit the gap in the belt). Where CIRCULAR PITCH (p) is the distance along the pitch circle or pitch line between corresponding profiles of adjacent teeth. <a class="reference external" href="http://tavmjong.free.fr/INKSCAPE/MANUAL/html/Coordinates.html">Inkscape Conversion between the units</a> is fairly straightforward: 1 inch = 1/12 ft = 2.54 cm = 25.4 mm = 0.0254 m = 6 pc = 72 pt.  72/2.54 = 10mm in pt or circular pitch (28.4).</p>
+<p>So I draw a 68 x 68 box and then generated a gear.</p>
+<div class="figure align-center">
+<img alt="pattern" src="http://bmsleight.github.io/pixelate-toast-website/images/gear-size/gear-gen.png" />
+</div>
+<p>Tweakign and overlaying the &quot;tank&quot; sections, I ended up with 69 x 69 mm</p>
+<div class="figure align-center">
+<object data="http://bmsleight.github.io/pixelate-toast-website/images/gear-size/drawing.svg" type="image/svg+xml">
+pattern</object>
+</div>
+<p>Putting this back into the sketch, we have a slight difference, which I can add to the <a class="reference external" href="https://github.com/bmsleight/pixelate-toast/blob/master/elevator/laser-cut/frame.py">base lazer cut instructions</a>.</p>
+<div class="figure align-center">
+<img alt="pattern" src="http://bmsleight.github.io/pixelate-toast-website/images/gear-size/updated-tinkercad-2.png" />
+</div>
+<div class="figure align-center">
+<img alt="pattern" src="http://bmsleight.github.io/pixelate-toast-website/images/gear-size/updated-tinkercad-3.png" />
+</div>
 </div>
 
-        </div>
+            </div>
+            <!-- /.entry-content -->
+        </article>
     </section>
+
         </div>
         <div class="col-lg-3 well well-sm" id="sidebar">
 <aside>
