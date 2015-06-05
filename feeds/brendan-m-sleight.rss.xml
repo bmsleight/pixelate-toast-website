@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pixelate-toast</title><link>http://bmsleight.github.io/pixelate-toast-website/</link><description></description><atom:link href="http://bmsleight.github.io/pixelate-toast-website/feeds/brendan-m-sleight.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 30 May 2015 02:00:00 +0200</lastBuildDate><item><title>Updated Set of Parts</title><link>http://bmsleight.github.io/pixelate-toast-website/updated-set-of-parts.html</link><description>&lt;p&gt;I spend some time doddling on the laptop today, using InkScape rather than python. Good set of parts to Laser-cut. &lt;/p&gt;
-&lt;p&gt;&lt;img src="images/updated-set-of-parts/thick.png" /&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Brendan M. Sleight</dc:creator><pubDate>Sat, 30 May 2015 02:00:00 +0200</pubDate><guid>tag:bmsleight.github.io,2015-05-30:pixelate-toast-website/updated-set-of-parts.html</guid><category>gears</category><category>laser-cut</category></item><item><title>Gear Size</title><link>http://bmsleight.github.io/pixelate-toast-website/gear-size.html</link><description>&lt;div class="section" id="selecting-gear-size"&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pixelate-toast</title><link>http://bmsleight.github.io/pixelate-toast-website/</link><description></description><atom:link href="http://bmsleight.github.io/pixelate-toast-website/feeds/brendan-m-sleight.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 01 Jun 2015 23:00:00 +0200</lastBuildDate><item><title>Additional Axis</title><link>http://bmsleight.github.io/pixelate-toast-website/additional-axis.html</link><description>&lt;p&gt;Add the x-axis sketch to the main sketch on tinkercad sketch&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="pattern" src="http://bmsleight.github.io/pixelate-toast-website/images/additional-axis/tinkercad.gif" /&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Brendan M. Sleight</dc:creator><pubDate>Mon, 01 Jun 2015 23:00:00 +0200</pubDate><guid>tag:bmsleight.github.io,2015-06-01:pixelate-toast-website/additional-axis.html</guid><category>tinkercad</category></item><item><title>X-axis Solenoid</title><link>http://bmsleight.github.io/pixelate-toast-website/x-axis-solenoid.html</link><description>&lt;p&gt;I did some doodling on how the x-axis could work. Then I converted it to a tinkercad sketch, which helps to sweat out some of the issues.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="http://bmsleight.github.io/pixelate-toast-website/images/X-axis-Solenoid/x-axis.png"&gt;&lt;img alt="pattern" src="http://bmsleight.github.io/pixelate-toast-website/images/X-axis-Solenoid/x-axis_600.png" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Brendan M. Sleight</dc:creator><pubDate>Mon, 01 Jun 2015 23:00:00 +0200</pubDate><guid>tag:bmsleight.github.io,2015-06-01:pixelate-toast-website/x-axis-solenoid.html</guid><category>solenoid</category><category>tinkercad</category></item><item><title>Updated Set of Parts</title><link>http://bmsleight.github.io/pixelate-toast-website/updated-set-of-parts.html</link><description>&lt;div class="section" id="notes-on-installation"&gt;
+&lt;h2&gt;Notes On Installation&lt;/h2&gt;
+&lt;p&gt;I spend some time doddling on the laptop today, using InkScape rather than good old python. Good set of parts to Laser-cut.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="pattern" src="http://bmsleight.github.io/pixelate-toast-website/images/updated-set-of-parts/thick.png" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Brendan M. Sleight</dc:creator><pubDate>Sat, 30 May 2015 21:00:00 +0200</pubDate><guid>tag:bmsleight.github.io,2015-05-30:pixelate-toast-website/updated-set-of-parts.html</guid><category>laser</category></item><item><title>Gear Size</title><link>http://bmsleight.github.io/pixelate-toast-website/gear-size.html</link><description>&lt;div class="section" id="selecting-gear-size"&gt;
 &lt;h2&gt;Selecting Gear Size&lt;/h2&gt;
 &lt;p&gt;Workign out the clearances for the gear size it not easy.&lt;/p&gt;
 &lt;p&gt;My orignal sketch in &lt;a class="reference external" href="https://www.tinkercad.com"&gt;Tinkercad&lt;/a&gt; looked like this:-&lt;/p&gt;
