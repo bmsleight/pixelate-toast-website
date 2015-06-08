@@ -10,6 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
+#SITEURL = 'http://bmsleight.github.io/pixelate-toast-website'
 SITEURL = 'http://pt.barwap.com/'
 RELATIVE_URLS = False
 
