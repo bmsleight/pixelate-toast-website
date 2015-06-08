@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pixelate-toast</title><link href="http://bmsleight.github.io/pixelate-toast-website/" rel="alternate"></link><link href="http://bmsleight.github.io/pixelate-toast-website/feeds/all.atom.xml" rel="self"></link><id>http://bmsleight.github.io/pixelate-toast-website/</id><updated>2015-06-04T23:00:00+02:00</updated><entry><title>Additional Axis</title><link href="http://bmsleight.github.io/pixelate-toast-website/additional-axis.html" rel="alternate"></link><updated>2015-06-04T23:00:00+02:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io,2015-06-04:pixelate-toast-website/additional-axis.html</id><summary type="html">&lt;p&gt;Add the x-axis sketch to the main sketch on tinkercad sketch&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pixelate-toast</title><link href="http://bmsleight.github.io/pixelate-toast-website/" rel="alternate"></link><link href="http://bmsleight.github.io/pixelate-toast-website/feeds/all.atom.xml" rel="self"></link><id>http://bmsleight.github.io/pixelate-toast-website/</id><updated>2015-06-07T23:50:00+02:00</updated><entry><title>New Tracks</title><link href="http://bmsleight.github.io/pixelate-toast-website/new-tracks.html" rel="alternate"></link><updated>2015-06-07T23:50:00+02:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io,2015-06-07:pixelate-toast-website/new-tracks.html</id><summary type="html">&lt;p&gt;Some times it is best to just sketch:-&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="pattern" src="http://bmsleight.github.io/pixelate-toast-website/images/new-tracks/sketch.jpg" /&gt;
+&lt;/div&gt;
+&lt;p&gt;The multiple tracks are hard to do easy in Inkscape, so I whipped up a &lt;a class="reference external" href="https://github.com/bmsleight/pixelate-toast/blob/master/elevator/laser-cut/tracks_for_frame.py"&gt;simple script&lt;/a&gt;. Which produces:-&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="pattern" src="http://bmsleight.github.io/pixelate-toast-website/images/new-tracks/tracks.png" /&gt;
+&lt;/div&gt;
+&lt;p&gt;I did use Inkscape however for the supporting props for these parts, these make a frame I can put the tracks into whilst I cable tie them:-&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="pattern" src="http://bmsleight.github.io/pixelate-toast-website/images/new-tracks/connectors.png" /&gt;
+&lt;/div&gt;
+&lt;p&gt;It is all clear in my head how these fix together, lets see if it works in practice?&lt;/p&gt;
+</summary><category term="tracks"></category></entry><entry><title>Size of Bread</title><link href="http://bmsleight.github.io/pixelate-toast-website/size-of-bread.html" rel="alternate"></link><updated>2015-06-07T23:00:00+02:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io,2015-06-07:pixelate-toast-website/size-of-bread.html</id><summary type="html">&lt;p&gt;Size of standard bread approximately 140mm by 110mm by 14mm.&lt;/p&gt;
+&lt;p&gt;Yes I measured it, no google did not work. &lt;a class="reference external" href="http://www.warburtons.co.uk/products/bread/white/800g-white-farmhouse"&gt;http://www.warburtons.co.uk/products/bread/white/800g-white-farmhouse&lt;/a&gt;&lt;/p&gt;
+</summary><category term="bread"></category></entry><entry><title>Additional Axis</title><link href="http://bmsleight.github.io/pixelate-toast-website/additional-axis.html" rel="alternate"></link><updated>2015-06-04T23:00:00+02:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:bmsleight.github.io,2015-06-04:pixelate-toast-website/additional-axis.html</id><summary type="html">&lt;p&gt;Add the x-axis sketch to the main sketch on tinkercad sketch&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
 &lt;img alt="pattern" src="http://bmsleight.github.io/pixelate-toast-website/images/additional-axis/tinkercad.gif" /&gt;
 &lt;/div&gt;
