@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    <title>Build and Bugs</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph tags -->
+
+            <meta property="og:type" content="article"/>
+            <meta property="og:title" content="Build and Bugs"/>
+            <meta property="og:url" content="http://pt.barwap.com/build-and-bugs.html"/>
+            <meta property="og:description" content="Time to lasercut a new frame, as well built it uncovered a few issues/bugs than need to be fixed. I then put the pieces together, which generated some issues to be raised in github. The biggest issues was that MDF is unforgiving compared with pine, and the kurf needs ..."/>
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://pt.barwap.com/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="http://pt.barwap.com/theme/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://pt.barwap.com/theme/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="http://pt.barwap.com/theme/css/pygments.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://pt.barwap.com/theme/css/style.css" type="text/css"/>
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+
+        <link href="http://pt.barwap.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="pixelate-toast ATOM Feed"/>
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li><a href="http://pt.barwap.com/">Pixelate-toast</a></li>
+                        <li class="active">
+                            <a href="http://pt.barwap.com/category/blog.html">blog</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://pt.barwap.com/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
+<!-- /.navbar -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://pt.barwap.com/build-and-bugs.html"
+                       rel="bookmark"
+                       title="Permalink to Build and Bugs">
+                        Build and Bugs
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+
+
+
+
+	<span class="label label-default">Tags</span>
+		<a href="http://pt.barwap.com/tag/lasercutter.html">lasercutter</a>
+	        /
+		<a href="http://pt.barwap.com/tag/build.html">build</a>
+	        /
+		<a href="http://pt.barwap.com/tag/bugs.html">bugs</a>
+	        /
+		<a href="http://pt.barwap.com/tag/issues.html">issues</a>
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>Time to lasercut a new frame, as well built it uncovered a few issues/bugs than need to be fixed.</p>
+<div class="figure align-center">
+<img alt="pattern" src="http://pt.barwap.com/images/build-and-bugs/cutting.gif" />
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/finished_cut.thumb.jpg"><img alt="image" src="http://pt.barwap.com/images/build-and-bugs/start.thumb.jpg" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/middle.jpg"><img alt="image" src="http://pt.barwap.com/images/build-and-bugs/middle.thumb.jpg" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/finished_cut.jpg"><img alt="image" src="http://pt.barwap.com/images/build-and-bugs/finished_cut.thumb.jpg" /></a>
+</div>
+<p>I then put the pieces together, which generated some issues to be raised in github.</p>
+<div class="figure align-center">
+<a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_220913.jpg"><img alt="image" src="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_220913.thumb.jpg" /></a>
+</div>
+<p>The biggest issues was that MDF is unforgiving compared with pine, and the kurf needs to be bigger.</p>
+<div class="section" id="issue-1">
+<h2>Issue #1</h2>
+<p><a class="reference external" href="https://github.com/bmsleight/pixelate-toast/issues/1">https://github.com/bmsleight/pixelate-toast/issues/1</a>  The <a class="reference external" href="./new-tracks.html">tracks</a> for some reason the inner cuts were missing on one side</p>
+<div class="figure align-center">
+<a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_220934.jpg"><img alt="image" src="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_220934.thumb.jpg" /></a>
+</div>
+</div>
+<div class="section" id="issue-2">
+<h2>Issue #2</h2>
+<p><a class="reference external" href="https://github.com/bmsleight/pixelate-toast/issues/2">https://github.com/bmsleight/pixelate-toast/issues/2</a>  The space around the solenoid needs to be bigger to allow for wiring from the solenoid.</p>
+<div class="figure align-center">
+<a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_220952.jpg"><img alt="image" src="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_220952.thumb.jpg" /></a>
+</div>
+</div>
+<div class="section" id="issue-3">
+<h2>Issue #3</h2>
+<p><a class="reference external" href="https://github.com/bmsleight/pixelate-toast/issues/3">https://github.com/bmsleight/pixelate-toast/issues/3</a>  The space on the shuttle needs to be bigger if the plunger is made bigger (See issue 2)</p>
+<div class="figure align-center">
+<a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221016.jpg"><img alt="image" src="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221016.thumb.jpg" /></a>
+</div>
+</div>
+<div class="section" id="issue-4">
+<h2>Issue #4</h2>
+<p><a class="reference external" href="https://github.com/bmsleight/pixelate-toast/issues/4">https://github.com/bmsleight/pixelate-toast/issues/4</a> The bearing are I have are the wrong size, although nothing wrong with the model - I just have to order some <a class="reference external" href="http://www.ebay.co.uk/sch/i.html?&amp;_nkw=688zz">http://www.ebay.co.uk/sch/i.html?&amp;_nkw=688zz</a></p>
+<div class="figure align-center">
+<a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221027.jpg"><img alt="image" src="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221027.thumb.jpg" /></a>
+</div>
+<p>Now ordered -  <em>closed</em></p>
+</div>
+<div class="section" id="issue-5">
+<h2>Issue 5</h2>
+<p><a class="reference external" href="https://github.com/bmsleight/pixelate-toast/issues/5">https://github.com/bmsleight/pixelate-toast/issues/5</a> Motor to control the shuttle going across, can not be attached from the back. So I need to move the support down. This will also have the benefit of having the support not at the far edge of the sides, which keep the captive nuts in place.</p>
+<div class="figure align-center">
+<a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221202.jpg"><img alt="image" src="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221202.thumb.jpg" /></a>
+</div>
+</div>
+<div class="section" id="issue-6">
+<h2>Issue 6</h2>
+<p><a class="reference external" href="https://github.com/bmsleight/pixelate-toast/issues/6">https://github.com/bmsleight/pixelate-toast/issues/6</a> Gap for gear motor not big enough. The small piece on top of the motor, used to support the motor is the right size, but the gap in the background is 3mm (standard thickness too small). Need to move the captive nut hole and extend the top piece.</p>
+<div class="figure align-center">
+<a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221050.jpg"><img alt="image" src="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221050.thumb.jpg" /></a>
+</div>
+</div>
+<div class="section" id="issue-7">
+<h2>Issue 7</h2>
+<p><a class="reference external" href="https://github.com/bmsleight/pixelate-toast/issues/7">https://github.com/bmsleight/pixelate-toast/issues/7</a> Extra holes not required, no captive nut at the upper position.</p>
+<div class="figure align-center">
+<a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221241.jpg"><img alt="image" src="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221241.thumb.jpg" /></a>
+</div>
+</div>
+<div class="section" id="issue-8">
+<h2>Issue 8</h2>
+<p><a class="reference external" href="https://github.com/bmsleight/pixelate-toast/issues/8">https://github.com/bmsleight/pixelate-toast/issues/8</a> Support too high and standing proud from the sides. Also captive nut is on the edge which means the nut can pop out easy. Solution, move the connection in and down, but check for clearance with toast.</p>
+<div class="figure align-center">
+<a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221124.jpg"><img alt="image" src="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221124.thumb.jpg" /></a>
+</div>
+</div>
+<div class="section" id="issue-9">
+<h2>Issue 9</h2>
+<p><a class="reference external" href="https://github.com/bmsleight/pixelate-toast/issues/9">https://github.com/bmsleight/pixelate-toast/issues/9</a> Side rails do not fit well. This is a manifestation of one of the biggest problems, the MDF is either a little bigger then 3mm or the kerf is less than expected. Solution to make less slots and make the hole part bigger.</p>
+<div class="figure align-center">
+<a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221142.jpg"><img alt="image" src="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221142.thumb.jpg" /></a>
+</div>
+</div>
+<div class="section" id="issue-10">
+<h2>Issue 10</h2>
+<p><a class="reference external" href="https://github.com/bmsleight/pixelate-toast/issues/10">https://github.com/bmsleight/pixelate-toast/issues/10</a> Need to order some bigger screws and rods as well as screw to connect the solenoid.</p>
+<div class="figure align-center">
+<a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221705.jpg"><img alt="image" src="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221705.thumb.jpg" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221837.jpg"><img alt="image" src="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221837.thumb.jpg" /></a>
+</div>
+</div>
+<div class="section" id="issue-11">
+<h2>Issue 11</h2>
+<p><a class="reference external" href="https://github.com/bmsleight/pixelate-toast/issues/11">https://github.com/bmsleight/pixelate-toast/issues/11</a> Need to add a brace to the wooden gear.</p>
+<div class="figure align-center">
+<a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221050.jpg"><img alt="image" src="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221050.thumb.jpg" /></a>
+</div>
+</div>
+
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-lg-3 well well-sm" id="sidebar">
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h4><i class="icon-home icon-large"></i>Social</h4></li>
+                    <li class="list-group-item"><a href="https://twitter.com/bmsleight"><i
+                            class="icon-twitter-sign icon-large"></i>twitter
+                    </a></li>
+                    <li class="list-group-item"><a href="https://github.com/bmsleight/pixelate-toast"><i
+                            class="icon-github-sign icon-large"></i>github
+                    </a></li>
+
+
+
+            <li class="list-group-item"><a href="http://pt.barwap.com/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>
+                <li class="list-group-item tag-1">
+                    <a href="http://pt.barwap.com/tag/pixels.html">
+                        pixels
+                    </a>
+                </li>
+                <li class="list-group-item tag-1">
+                    <a href="http://pt.barwap.com/tag/toast.html">
+                        toast
+                    </a>
+                </li>
+                <li class="list-group-item tag-2">
+                    <a href="http://pt.barwap.com/tag/tinkercad.html">
+                        tinkercad
+                    </a>
+                </li>
+                <li class="list-group-item tag-2">
+                    <a href="http://pt.barwap.com/tag/trial.html">
+                        trial
+                    </a>
+                </li>
+                <li class="list-group-item tag-2">
+                    <a href="http://pt.barwap.com/tag/while.html">
+                        while
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/lasercutter.html">
+                        lasercutter
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/fail.html">
+                        fail
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/shapeways.html">
+                        shapeways
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/tracks.html">
+                        tracks
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/wr703n.html">
+                        wr703n
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/chopping-board.html">
+                        chopping-board
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/python.html">
+                        python
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/bugs.html">
+                        bugs
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/solenoid.html">
+                        solenoid
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/pelican.html">
+                        pelican
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/openwrt.html">
+                        openwrt
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/charlie.html">
+                        Charlie
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/logo.html">
+                        logo
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/alumide.html">
+                        alumide
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/laser.html">
+                        laser
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/bread.html">
+                        bread
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/build.html">
+                        build
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/issues.html">
+                        issues
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/stamp.html">
+                        stamp
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/foil.html">
+                        foil
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/tty.html">
+                        tty
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://pt.barwap.com/tag/materialise.html">
+                        materialise
+                    </a>
+                </li>
+        </ul>
+    </section>
+</aside>        </div>
+    </div>
+</div>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://pt.barwap.com/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://pt.barwap.com/theme/js/respond.min.js"></script>
+</body>
+</html>
