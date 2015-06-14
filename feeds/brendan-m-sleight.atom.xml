@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pixelate-toast</title><link href="http://pt.barwap.com/" rel="alternate"></link><link href="http://pt.barwap.com/feeds/brendan-m-sleight.atom.xml" rel="self"></link><id>http://pt.barwap.com/</id><updated>2015-06-13T23:00:00+02:00</updated><entry><title>Build and Bugs</title><link href="http://pt.barwap.com/build-and-bugs.html" rel="alternate"></link><updated>2015-06-13T23:00:00+02:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:pt.barwap.com,2015-06-13:build-and-bugs.html</id><summary type="html">&lt;p&gt;Time to lasercut a new frame, as well built it uncovered a few issues/bugs than need to be fixed.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pixelate-toast</title><link href="http://pt.barwap.com/" rel="alternate"></link><link href="http://pt.barwap.com/feeds/brendan-m-sleight.atom.xml" rel="self"></link><id>http://pt.barwap.com/</id><updated>2015-06-14T18:00:00+02:00</updated><entry><title>Build and Bugs</title><link href="http://pt.barwap.com/build-and-bugs.html" rel="alternate"></link><updated>2015-06-14T18:00:00+02:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:pt.barwap.com,2015-06-14:build-and-bugs.html</id><summary type="html">&lt;p&gt;Time to lasercut a new frame, as well built it uncovered a few issues/bugs than need to be fixed.&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
 &lt;img alt="pattern" src="http://pt.barwap.com/images/build-and-bugs/cutting.gif" /&gt;
 &lt;/div&gt;
@@ -96,6 +96,13 @@
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/bmsleight/pixelate-toast/issues/11"&gt;https://github.com/bmsleight/pixelate-toast/issues/11&lt;/a&gt; Need to add a brace to the wooden gear.&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
 &lt;a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221050.jpg"&gt;&lt;img alt="image" src="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221050.thumb.jpg" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="issue-12"&gt;
+&lt;h2&gt;Issue 12&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/bmsleight/pixelate-toast/issues/12"&gt;https://github.com/bmsleight/pixelate-toast/issues/12&lt;/a&gt; The material is not 3mm, but 3.10 -&amp;gt; 3.20 mm. This makes the parts harder to fit together.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221050.jpg"&gt;&lt;img alt="image" src="http://pt.barwap.com/images/build-and-bugs/IMG_20150614_181512.thumb.jpg" /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </summary><category term="lasercutter"></category><category term="build"></category><category term="bugs"></category><category term="issues"></category></entry><entry><title>New Tracks</title><link href="http://pt.barwap.com/new-tracks.html" rel="alternate"></link><updated>2015-06-07T23:50:00+02:00</updated><author><name>Brendan M. Sleight</name></author><id>tag:pt.barwap.com,2015-06-07:new-tracks.html</id><summary type="html">&lt;p&gt;Some times it is best to just sketch:-&lt;/p&gt;

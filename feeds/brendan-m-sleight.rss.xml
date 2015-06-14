@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pixelate-toast</title><link>http://pt.barwap.com/</link><description></description><atom:link href="http://pt.barwap.com/feeds/brendan-m-sleight.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 13 Jun 2015 23:00:00 +0200</lastBuildDate><item><title>Build and Bugs</title><link>http://pt.barwap.com/build-and-bugs.html</link><description>&lt;p&gt;Time to lasercut a new frame, as well built it uncovered a few issues/bugs than need to be fixed.&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pixelate-toast</title><link>http://pt.barwap.com/</link><description></description><atom:link href="http://pt.barwap.com/feeds/brendan-m-sleight.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 14 Jun 2015 18:00:00 +0200</lastBuildDate><item><title>Build and Bugs</title><link>http://pt.barwap.com/build-and-bugs.html</link><description>&lt;p&gt;Time to lasercut a new frame, as well built it uncovered a few issues/bugs than need to be fixed.&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
 &lt;img alt="pattern" src="http://pt.barwap.com/images/build-and-bugs/cutting.gif" /&gt;
 &lt;/div&gt;
@@ -98,7 +98,14 @@
 &lt;a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221050.jpg"&gt;&lt;img alt="image" src="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221050.thumb.jpg" /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Brendan M. Sleight</dc:creator><pubDate>Sat, 13 Jun 2015 23:00:00 +0200</pubDate><guid>tag:pt.barwap.com,2015-06-13:build-and-bugs.html</guid><category>lasercutter</category><category>build</category><category>bugs</category><category>issues</category></item><item><title>New Tracks</title><link>http://pt.barwap.com/new-tracks.html</link><description>&lt;p&gt;Some times it is best to just sketch:-&lt;/p&gt;
+&lt;div class="section" id="issue-12"&gt;
+&lt;h2&gt;Issue 12&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/bmsleight/pixelate-toast/issues/12"&gt;https://github.com/bmsleight/pixelate-toast/issues/12&lt;/a&gt; The material is not 3mm, but 3.10 -&amp;gt; 3.20 mm. This makes the parts harder to fit together.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="http://pt.barwap.com/images/build-and-bugs/IMG_20150613_221050.jpg"&gt;&lt;img alt="image" src="http://pt.barwap.com/images/build-and-bugs/IMG_20150614_181512.thumb.jpg" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Brendan M. Sleight</dc:creator><pubDate>Sun, 14 Jun 2015 18:00:00 +0200</pubDate><guid>tag:pt.barwap.com,2015-06-14:build-and-bugs.html</guid><category>lasercutter</category><category>build</category><category>bugs</category><category>issues</category></item><item><title>New Tracks</title><link>http://pt.barwap.com/new-tracks.html</link><description>&lt;p&gt;Some times it is best to just sketch:-&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
 &lt;img alt="pattern" src="http://pt.barwap.com/images/new-tracks/sketch.jpg" /&gt;
 &lt;/div&gt;
